@@ -1,0 +1,9 @@
+package dictionary;
+
+public class Dictionary {
+	DictionaryNode header = new DictionaryNode();
+	DictionaryNode trailer = new DictionaryNode();
+	
+	
+
+}

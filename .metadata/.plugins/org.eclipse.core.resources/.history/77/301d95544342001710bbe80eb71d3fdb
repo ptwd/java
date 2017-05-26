@@ -1,0 +1,49 @@
+package dictionary;
+
+import java.util.Arrays;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Dictionary example = new Dictionary();
+		System.out.println(String.format("%-30s%-20s%s","Operation","Output","Dictiooary"));
+		System.out.println("---------------------------------------------------------------------------");
+		System.out.print(String.format("%-30s","insert(5,A)"));
+		example.insert(5, "A");
+		example.print();
+		System.out.print(String.format("%-30s","insert(7,B)"));
+		example.insert(7, "B");
+		example.print();
+		System.out.print(String.format("%-30s","insert(2,C)"));
+		example.insert(2, "C");
+		example.print();
+		System.out.print(String.format("%-30s","insert(8,D)"));
+		example.insert(8, "D");
+		example.print();
+		System.out.print(String.format("%-30s","insert(2,E)"));
+		example.insert(2, "E");
+		example.print();
+		System.out.print(String.format("%-30s","find(7)"));
+		System.out.print(String.format("%-20s",example.find(7)));
+		example.print();
+		System.out.print(String.format("%-30s","find(4)"));
+		System.out.print(String.format("%-20s",example.find(4)));
+		example.print();
+		System.out.print(String.format("%-30s","find(2)"));
+		System.out.print(String.format("%-20s",example.find(2)));
+		example.print();
+		System.out.print(String.format("%-30s","findAll(2)"));
+		int i = 0;
+		for(; example.findAll(2)[i] !=null; i++)
+		{
+			System.out.print( example.findAll(2)[i]);
+			
+		}
+		example.print();
+		
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package simplejavaprogram;
+import java.util.Scanner;
+
+
+
+public class Firstprogram {
+
+	private static Scanner keyboard;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("i'm busy.");
+		
+		int n1, n2;
+		
+		keyboard = new Scanner(System.in);
+		n1 = keyboard.nextInt();
+		n2 = keyboard.nextInt();
+		System.out.println("sum is :");
+		System.out.println(n1 + n2);
+
+	}
+
+}

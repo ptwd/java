@@ -1,0 +1,77 @@
+package tree;
+
+import java.util.*;
+
+
+
+public class Tree{
+	
+	private TreeNode root;
+	
+	public Tree(TreeNode root)
+	{
+		this.root = root;
+	}
+	
+	public TreeNode root()
+	{
+		return this.root;
+	}	
+	public TreeNode parent(TreeNode v)
+	{
+		return v.getParent();
+	}
+	public List<TreeNode> children(TreeNode v)
+	{
+		return v.getList();	
+		
+	}
+	
+	public boolean isInternal(TreeNode v)
+	{
+		if(v.getList().isEmpty())
+			return false;
+		else
+			return true;
+		
+	}
+	
+	public boolean isExternal(TreeNode v)
+	{
+		if( v.getList().isEmpty())
+			return true;
+		else
+			return false;
+		
+	}
+	
+	public boolean isRoot(TreeNode v)
+	{
+		if(v.getParent() == null)
+			return true;
+		else
+			return false;
+	}
+	
+	public void addChild(TreeNode p, String data)
+	{
+		TreeNode newNode = new TreeNode(p, data);
+		p.getList().add(newNode);
+		
+	}
+
+	public void preOrder(TreeNode n)
+	{
+		System.out.print(n.getData());
+		for(int i = 0; i < n.getList().size(); i++)
+			preOrder(n.getList().get(i));
+		
+	}
+	
+	public void postOrder(TreeNode n)
+	{
+		for(int i = 0; i < n.getList().size(); i++)
+			postOrder(n.getList().get(i));
+		System.out.print(n.getData());
+	}
+}

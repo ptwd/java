@@ -1,0 +1,21 @@
+package dictionary;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Dictionary example = new Dictionary();
+		example.insert(5, "A");
+		example.print();
+		example.insert(7, "B");
+		example.print();
+		example.insert(2, "C");
+		example.print();
+		example.insert(8, "D");
+		example.print();
+		example.insert(2, "E");
+		example.print();
+	}
+
+}

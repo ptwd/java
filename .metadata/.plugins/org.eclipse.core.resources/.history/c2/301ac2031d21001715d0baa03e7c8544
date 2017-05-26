@@ -1,0 +1,49 @@
+package tree;
+
+import java.util.*;
+
+public class TreeNode {
+	
+	private String data;
+	private TreeNode parent;
+	private List<TreeNode> Child_list;  // <>는  자료형
+	
+	
+	public TreeNode(){
+		this.data = null;
+		this.parent = null;
+		this.Child_list = new ArrayList<TreeNode> ();
+		
+	}
+	
+	public TreeNode(TreeNode parent, String data){
+		this.data = data;
+		this.parent = parent;
+		this.Child_list = new ArrayList<TreeNode> ();
+	}
+	
+	public void setParent(TreeNode p){
+		this.parent = p;
+	}
+	
+	public void setData(String d){
+		this.data = d;
+	}
+	
+	public void setList(ArrayList<TreeNode> list){
+		this.Child_list = list;
+	}
+	
+	public TreeNode getParent(){
+		return this.parent;
+	}
+	
+	public String getData(){
+		return this.data;
+	}
+	
+	public List<TreeNode> getList(){
+		return this.Child_list;
+	}
+
+}

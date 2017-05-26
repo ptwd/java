@@ -1,0 +1,36 @@
+package simplejavaprogram;
+import java.util.Scanner;
+
+import javax.swing.plaf.synth.SynthSeparatorUI;
+
+public class ScanTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner key  = new Scanner(System.in);
+		System.out.println("very busy");
+		int n1, n2;
+		n1 = key.nextInt();
+		n2 = key.nextInt();
+		System.out.println(n1 +n2);
+		
+		double d1, d2;
+		d1 = key.nextDouble();
+		d2  = key.nextDouble();
+		
+		System.out.println(d1 + d2);
+		
+		String s1, s2;
+		s1 = key.next();
+		s2 = key.next();
+		System.out.println(s1 + s2);
+		
+		s1 = key.nextLine();
+		s1  = key.nextLine();
+		
+		System.out.println(s1);
+
+	}
+
+}

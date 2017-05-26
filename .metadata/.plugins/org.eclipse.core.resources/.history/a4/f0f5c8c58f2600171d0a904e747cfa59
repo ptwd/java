@@ -1,0 +1,41 @@
+package simplejavaprogram;
+import java.util.Scanner;
+import java.sql.*;
+
+
+
+public class ScanTest {
+	
+	public static int recursive(int n){
+		if ( n == 0 )
+			return 1;
+		else
+			return n* recursive(n-1);
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Timestamp ts = new Timestamp(System.currentTimeMillis());
+		Scanner sc = new Scanner(System.in);
+		
+		int n = sc.nextInt();
+		
+		System.out.println(System.currentTimeMillis());
+		System.out.println(ts.getTime());
+		
+		int re = recursive(n);
+		
+		
+		Timestamp ts2 = new Timestamp(System.currentTimeMillis());
+		System.out.println(ts2.getTime());
+		
+		long et = Math.abs(ts.getTime()-ts2.getTime());
+		
+		System.out.println(et+ "erererere" + re);
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+package dictionary;
+
+public class Dictionary {
+	DictionaryNode header = new DictionaryNode();
+	DictionaryNode trailer = new DictionaryNode();
+	
+	public Dictionary() {
+		header.setNext(trailer);
+		trailer.setPrev(header);
+	}
+	
+	public void insert(int key, String value){
+		DictionaryNode temp = header.next;
+		while(temp !=trailer){
+			if(temp.key == key){
+				if(temp.filled == 10)
+					System.out.println("value°¡ °¡µæ Ã¡½À´Ï´Ù");
+				else{
+					temp.value[temp.filled] = value;
+					temp.filled++;
+				}
+				break;
+			}
+			temp = temp.next;
+		}
+		DictionaryNode nodeNew = new DictionaryNode(key, value, trailer.prev, trailer);
+		trailer.prev.setNext(nodeNew);
+		trailer.setPrev(nodeNew);
+	}
+	
+	public void remove(int key){
+		DictionaryNode temp = header.next;
+		while(temp !=trailer){
+			
+		}
+		
+	}
+
+}

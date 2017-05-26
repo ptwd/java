@@ -1,0 +1,16 @@
+package dictionary;
+
+public class DictionaryNode {
+	int key;
+	String value[];
+	DictionaryNode next;
+	
+	public DictionaryNode()
+	{
+		key = 0;
+		value = new String[10];
+		next = null;
+	}
+	
+
+}

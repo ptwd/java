@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\sunhyuk\Desktop"/>
+		<item value="C:\Users\sunhyuk\Desktop\201310395_박선혁_datastructure_chap5[2405]"/>
+		<item value="C:\Users\sunhyuk\Desktop\201310395_박선혁_datastructure[2405]"/>
+		<item value="C:\Users\sunhyuk\Desktop\201310395_박선혁_datastructure_Chapter6[2405].dat (3)"/>
+		<item value="C:\Users\sunhyuk\Desktop\201310395_박선혁_datastructure_Chapter6[2405].dat"/>
+		<item value="C:\Users\sunhyuk\Desktop\201310395_박선혁_datastructure_chapter5[2405]"/>
+	</list>
+	<section name="NewWizardAction">
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
+		<item value="580" key="DIALOG_HEIGHT"/>
+		<item value="546" key="DIALOG_X_ORIGIN"/>
+		<item value="52" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>
